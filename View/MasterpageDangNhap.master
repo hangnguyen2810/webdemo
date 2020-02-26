@@ -1,0 +1,169 @@
+﻿<%@ Master Language="C#" AutoEventWireup="true" CodeFile="MasterpageDangNhap.master.cs"
+    Inherits="MasterpageDangNhap" %>
+
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head runat="server">
+    <link rel="icon" href="../anhmonandacsac/icon.png" type="image/x-icon" />
+    <title>Nhà Hàng Nhật Bản Hatoyama</title>
+    <asp:ContentPlaceHolder ID="head" runat="server">
+    </asp:ContentPlaceHolder>
+    <link href="StyleSheetkhachang.css" rel="stylesheet" type="text/css" />
+    <link href="/your-path-to-fontawesome/css/all.css" rel="stylesheet" />
+    <link href="https://fonts.googleapis.com/css?family=Open+Sans|Roboto&display=swap" rel="stylesheet" />
+</head>
+<body>
+    <form id="form1" runat="server">
+<!-- Subiz -->
+<script>
+    (function (s, u, b, i, z) {
+        u[i] = u[i] || function () {
+            u[i].t = +new Date();
+            (u[i].q = u[i].q || []).push(arguments);
+        };
+        z = s.createElement('script');
+        var zz = s.getElementsByTagName('script')[0];
+        z.async = 1; z.src = b; z.id = 'subiz-script';
+        zz.parentNode.insertBefore(z, zz);
+    })(document, window, 'https://widgetv4.subiz.com/static/js/app.js', 'subiz');
+    subiz('setAccount', 'acqpbdfajfkhgpeaaokb');
+</script>
+<!-- End Subiz -->
+    <div>
+        <header>
+            <div class="header-top">
+                <div class="container">
+                    <div class="header-top-left float-left">
+                        <p class="float-left">Hotline:  0948 19 22 88</p>
+                        <p class="float-left">Email: nhahanghatoyamavn@gmail.com</p>
+                        <div class="clear-fix"></div>
+                    </div>
+               <asp:ContentPlaceHolder id="ContentPlaceHolder2" runat="server">
+                   <div class="header-top-right float-right">
+                       <ul class="login">
+                       <asp:ContentPlaceHolder ID="taikhoan" runat="server">
+                          
+                          </asp:ContentPlaceHolder>
+                           <li><a href="DangNhap.aspx">Đăng xuất</a></li>
+                       </ul>
+                   </div>
+        </asp:ContentPlaceHolder>
+                    
+                    <div class="clear-fix"></div>
+                </div>
+            </div>
+            <div class="header-bottom">
+                <div class="container">
+                    <div class="logo float-left"><a href="trangchukh.aspx"><img src="../logo/logo.png" /></a></div>
+                    <div class="menu float-left">
+                        <nav>
+                            <ul class="menu-main ">
+                                <li><a href="trangchukh.aspx">trang chủ</a></li>
+                                <li><a href="GioiThieu.aspx">giới thiệu</a></li>
+                                 <li><a href="DoiNgu.aspx">Đội ngũ</a></li>
+                               
+                                <li> <a href="DsMonDat.aspx">Món ăn</a>
+                                    <ul class="menu-c2">
+                                        <li><a href="Agemono.aspx">Agemono</a></li>
+                                        <li><a href="Salads.aspx">Salads</a></li>
+                                        <li><a href="Sashimi.aspx">Sashimi</a></li>
+                                        <li><a href="Sunomono.aspx">Sunomono</a></li>
+                                        <li><a href="Sushi.aspx">Sushi</a></li>
+                                    </ul>
+                                </li>
+                                <li><a href="DatBan.aspx">Đặt bàn</a></li>
+                                 <li><a href="LienHe.aspx">Liên hệ</a></li>
+                               <li><a href="LichSu.aspx">Lịch Sử</a></li>
+                               
+
+                            </ul>
+                        </nav>
+                    </div>
+                    <div class="clear-fix"></div>
+                </div>
+            </div>
+        </header>
+    </div>
+    <main>
+     <div class="slider">
+                <div class="container">
+                 <asp:ScriptManager ID="ScriptManager2" runat="server">
+                        </asp:ScriptManager>
+                        
+                    <asp:UpdatePanel ID="UpdatePanel1" runat="server">
+                    <ContentTemplate>
+                       <div class="slider">
+                            <asp:Timer ID="Timer1" runat="server" Interval="2000" OnTick="Timer1_Tick">
+                        </asp:Timer>
+                        <asp:Image ID="img" runat="server" ImageUrl="~/anhmonan/slide1.jpg" Width="1024" />
+                        </div>
+                            </ContentTemplate>
+                </asp:UpdatePanel>
+                   
+                </div>
+        </div>
+        <asp:ContentPlaceHolder id="noidung" runat="server">
+        
+        </asp:ContentPlaceHolder>
+    
+        </main>
+    <footer>
+        <div class="footer-top">
+            <div class="container">
+                <div class="row">
+                    <div class="col-4">
+                        <div class="title">
+                            Thông tin liên hệ
+                                              </div>
+                        <div class="content-footer">
+                            <p>
+                                Địa chỉ 1: Số 8 Vạn Phúc, Ba Đình, Hà Nội
+                                <br />
+Hotline: 0948 19 22 88
+<br />
+Địa chỉ 2: Shop House 30 Nguyễn Chánh, Trung Hòa, Cầu Giấy, HN
+(đối diện Kiểm toán Nhà nước)
+<br />
+Hotline: 0918 96 22 88
+<br />
+Địa chỉ 3: 13 Lý Thường Kiệt, Q. Hoàn Kiếm, HN
+<br />
+Hotline: 0961 59 22 88
+                            </p>
+                        </div>
+                    </div>
+
+                    <div class="col-4">
+                        <div class="title">
+                            Giờ mở cửa
+                        </div>
+                        <div class="content-footer">
+                        <p>
+                            Thứ Hai - Thứ Sáu 11:30 am - 9:30 pm
+                            <br />
+Thứ Bảy 9:30 am - 22:30 pm<br />
+Chủ Nhật 9:30 am - 22:30 pm<br />
+                        </p>
+                        </div>
+                    </div>
+
+                    <div class="col-4">
+                        <div class="title">
+                            Địa chỉ nhà hàng
+                        </div>
+                        <div class="content-footer">
+                            <img src="../anhmonan/maps2.png" alt="map" />
+                        </div>
+                    </div>
+                    <div class="clear-fix"></div>
+                </div>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            copyright © 2020
+        </div>
+    </footer>
+    </div>
+    </form>
+</body>
+</html>

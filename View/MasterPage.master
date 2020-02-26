@@ -1,0 +1,77 @@
+﻿<%@ Master Language="C#" AutoEventWireup="true" CodeFile="MasterPage.master.cs" Inherits="MasterPage" %>
+
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head runat="server">
+    <link href="StyleSheet.css" rel="stylesheet" type="text/css" />
+    <link href="https://fonts.googleapis.com/css?family=Open+Sans|Roboto&display=swap"
+        rel="stylesheet" />
+    <link rel="icon" href="../anhmonandacsac/icon.png" type="image/x-icon" />
+    <title>[Quản trị]Nhà Hàng Nhật Bản Hatoyama</title>
+    <asp:ContentPlaceHolder ID="head" runat="server">
+    </asp:ContentPlaceHolder>
+</head>
+<body>
+    <form id="form1" runat="server">
+    <div>
+        <header>
+        <div class="container">
+            <div class="header">
+                <div class="logo">
+                    <a href="#"><img src="../logo/logo.png" alt="Alternate Text" /></a>
+                </div>
+                <h1>Nhà hàng Nhật Hatoyama</h1>
+                <div class="header-top-right float-right">
+                        <ul class="login">
+                         <asp:ContentPlaceHolder ID="taikhoan" runat="server">
+                          
+                          </asp:ContentPlaceHolder>
+                          <li><a href="../admin/login.aspx">Đăng Xuất</a></li>
+                         
+                         </ul>
+                    </div>
+                <div class="clear-both"></div>
+            </div>
+            </div>
+        </header>
+        <section>
+        <nav class="float-left">
+        <div class="container">
+            <ul class="menu text-center">
+                <li><a href="NhanVien.aspx">Nhân viên</a></li>
+                <li><a href="KhachHang.aspx">Khách hàng</a></li>
+
+                <li><a href="LoaiMonAn.aspx">Loại món ăn</a></li>
+                <li><a href="MonAn.aspx">Món ăn</a></li>
+                <li><a href="BanAn.aspx">Bàn ăn</a></li>
+                <li><a href="hoadon.aspx">Hóa đơn</a>
+        
+                </li>
+                <li><a href="../admin/BaoCaoTK.aspx">Báo Cáo</a> </li>
+                <li><a href="QLLienHe.aspx">Liên hệ</a></li>
+               
+
+            </ul>
+            </div>
+        </nav>
+        <main class="float-left">
+        <div class="container">
+            <div class="content-main">
+                <asp:ContentPlaceHolder ID="noidung" runat="server" />
+            </div>
+            </div>
+        </main>
+        <div class="clear-both"></div>
+        </section>
+        <footer class="text-center">
+        <div class="container">
+            
+            <marquee width="100%" behavior="alternate">  
+Nhà hàng Nhật Hatoyama
+</marquee>
+            </div>
+        </footer>
+    </div>
+    </form>
+</body>
+</html>

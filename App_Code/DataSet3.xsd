@@ -1,0 +1,27 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<xs:schema id="DataSet3" targetNamespace="http://tempuri.org/DataSet3.xsd" xmlns:mstns="http://tempuri.org/DataSet3.xsd" xmlns="http://tempuri.org/DataSet3.xsd" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata" xmlns:msprop="urn:schemas-microsoft-com:xml-msprop" attributeFormDefault="qualified" elementFormDefault="qualified">
+  <xs:annotation>
+    <xs:appinfo source="urn:schemas-microsoft-com:xml-msdatasource">
+      <DataSource DefaultConnectionIndex="0" FunctionsComponentName="QueriesTableAdapter" Modifier="AutoLayout, AnsiClass, Class, Public" SchemaSerializationMode="IncludeSchema" xmlns="urn:schemas-microsoft-com:xml-msdatasource">
+        <Connections />
+        <Tables />
+        <Sources />
+      </DataSource>
+    </xs:appinfo>
+  </xs:annotation>
+  <xs:element name="DataSet3" msdata:IsDataSet="true" msdata:UseCurrentLocale="true" msprop:Generator_DataSetName="DataSet3" msprop:Generator_UserDSName="DataSet3">
+    <xs:complexType>
+      <xs:choice minOccurs="0" maxOccurs="unbounded">
+        <xs:element name="mon_dat" msprop:Generator_TableClassName="mon_datDataTable" msprop:Generator_TableVarName="tablemon_dat" msprop:Generator_TablePropName="mon_dat" msprop:Generator_RowDeletingName="mon_datRowDeleting" msprop:Generator_RowChangingName="mon_datRowChanging" msprop:Generator_RowEvHandlerName="mon_datRowChangeEventHandler" msprop:Generator_RowDeletedName="mon_datRowDeleted" msprop:Generator_UserTableName="mon_dat" msprop:Generator_RowChangedName="mon_datRowChanged" msprop:Generator_RowEvArgName="mon_datRowChangeEvent" msprop:Generator_RowClassName="mon_datRow">
+          <xs:complexType>
+            <xs:sequence>
+              <xs:element name="Món" msprop:Generator_ColumnVarNameInTable="columnMón" msprop:Generator_ColumnPropNameInRow="Món" msprop:Generator_ColumnPropNameInTable="MónColumn" msprop:Generator_UserColumnName="Món" type="xs:string" minOccurs="0" />
+              <xs:element name="SốHĐ" msprop:Generator_ColumnVarNameInTable="columnSốHĐ" msprop:Generator_ColumnPropNameInRow="SốHĐ" msprop:Generator_ColumnPropNameInTable="SốHĐColumn" msprop:Generator_UserColumnName="SốHĐ" type="xs:int" minOccurs="0" />
+              <xs:element name="Lượt" msprop:Generator_ColumnVarNameInTable="columnLượt" msprop:Generator_ColumnPropNameInRow="Lượt" msprop:Generator_ColumnPropNameInTable="LượtColumn" msprop:Generator_UserColumnName="Lượt" type="xs:short" minOccurs="0" />
+            </xs:sequence>
+          </xs:complexType>
+        </xs:element>
+      </xs:choice>
+    </xs:complexType>
+  </xs:element>
+</xs:schema>
